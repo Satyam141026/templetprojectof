@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {NavLink} from 'react-router-dom'
 export const Header = () => {
   return (
 <header className="brk-header d-lg-flex flex-column brk-header_style-1 brk-header_color-dark" style={{display: 'none'}} data-logo-src="img/logo-dark-2.png" data-bg-mobile="img/brk-bg-mobile-menu.jpg" data-sticky-hide={0} data-brk-library="component__header">
@@ -673,10 +673,10 @@ export const Header = () => {
                         <a href="login.html">Errors <i className="fas fa-angle-right" /></a>
                         <ul className="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
                           <li className="dd-effect">
-                            <a href="404.html">Page not found - 404</a>
+                            <NavLink to="/404">Page not found - 404</NavLink>
                           </li>
                           <li className="dd-effect">
-                            <a href="403.html">Access denied - 403</a>
+                            <NavLink to="/403">Access denied - 403</NavLink>
                           </li>
                         </ul>
                       </li>
@@ -684,10 +684,10 @@ export const Header = () => {
                         <a href="login.html">Login/Register <i className="fas fa-angle-right" /></a>
                         <ul className="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
                           <li className="dd-effect">
-                            <a href="login.html">Login</a>
+                            <NavLink to="/login">Login</NavLink>
                           </li>
                           <li className="dd-effect">
-                            <a href="register.html">Register</a>
+                            <NavLink to="/register">Register</NavLink>
                           </li>
                         </ul>
                       </li>
