@@ -4,6 +4,7 @@ import {  Register} from './Pages/Register'
 import { Login} from './Pages/Login'
 import { Page404 } from './Pages/Page404'
 import { Route, Routes } from 'react-router-dom'
+import { Blog } from './Pages/Blog'
 
  const App = () => {
   return (
@@ -13,8 +14,8 @@ import { Route, Routes } from 'react-router-dom'
     <Route path="/home" element={<Home />} />
     <Route path="/login" element={<Login/>} />
     <Route path="/register" element={< Register />} />
+    <Route path="/blog" element={<Blog/>} />
     <Route path="*" element={<Page404/>} />
-    
     </Routes>
 
   )

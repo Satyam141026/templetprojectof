@@ -579,7 +579,7 @@ export const Header = () => {
                     </a>
                     <ul className="brk-nav__sub-menu brk-nav-drop-down font__family-montserrat">
                       <li className="dd-effect">
-                        <a href="blog.html">Blog</a>
+                        <NavLink to="/blog">Blog</NavLink>
                       </li>
                       <li className="dd-effect">
                         <a href="blog-page.html">Blog post</a>
@@ -676,7 +676,7 @@ export const Header = () => {
                             <NavLink to="/404">Page not found - 404</NavLink>
                           </li>
                           <li className="dd-effect">
-                            <NavLink to="/403">Access denied - 403</NavLink>
+                            <NavLink to="403">Access denied - 403</NavLink>
                           </li>
                         </ul>
                       </li>
